@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Tin tức công nghệ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+            cursor: pointer;
+        }
+        nav a {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo" onclick="location.href='../../TechZone-Website/index.html';">
+                <span class="logo-box">T</span> TechZone
+            </div>
+            <nav>
+                <a href="../../TechZone-Website/index.html">Trang chủ</a>
+                <a href="../../TechZone-Website/categories.html">Thể loại</a>
+                <a href="#" class="active">Bản tin</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm bài viết...">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="header-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-user" onclick="location.href='../../NguyenNgocHuy_2474802015199/taikhoancanhan/index.html';" style="cursor: pointer;"></i>
+                    <i class="fa fa-shopping-cart" onclick="location.href='../gio hang/index.html';" style="cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-layout">
+        
+        <main class="content-area">
+            
+            <section class="hero-banner">
+                <div class="hero-content">
+                    <h1>Buổi bình minh của trí tuệ tự chủ:<br>Cách AI tạo sinh định hình lại kiến trúc phần mềm hiện đại</h1>
+                    <button class="btn-read-more">Đọc toàn bộ bài viết <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <div class="section-title-bar">
+                <h2>Tin tức mới nhất</h2>
+                <div class="sort-filter">
+                    Sắp xếp theo: <span class="sort-active">Mới nhất trước <i class="fa fa-chevron-down"></i></span>
+                </div>
+            </div>
+
+            <section class="articles-grid">
+                
+                <article class="article-card">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-tech">KỸ THUẬT</span>
+                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=600&q=80" alt="Micro-Frontend" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Ngày 24 tháng 10 năm 2023</span>
+                            <span><i class="fa-regular fa-clock"></i> Thời gian đọc: 8 phút</span>
+                        </div>
+                        <h3>Kiến trúc Micro-Frontend: Mở rộng quy mô các nhóm doanh nghiệp</h3>
+                        <p>Tìm hiểu cách các tổ chức chạy quy mô lớn đang chia nhỏ các ứng dụng frontend nguyên khối (monolithic) thành những phần dễ quản lý hơn,...</p>
+                        <div class="card-footer">
+                            <div class="author">
+                                <div class="avatar">A</div>
+                                <span>Nguyen Van A</span>
+                            </div>
+                            <a href="#" class="read-link">ĐỌC THÊM <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-security">BẢO MẬT</span>
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Zero Trust" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Ngày 22 tháng 10 năm 2023</span>
+                            <span><i class="fa-regular fa-clock"></i> Thời gian đọc: 12 phút</span>
+                        </div>
+                        <h3>Kiến trúc Zero Trust trong kỷ nguyên làm việc kết hợp</h3>
+                        <p>Tại sao "Không bao giờ tin tưởng, luôn luôn xác thực" không còn chỉ là một chiến lược, mà là yêu cầu cơ bản đối với... hiện đại...</p>
+                        <div class="card-footer">
+                            <div class="author">
+                                <div class="avatar">B</div>
+                                <span>Nguyen Van B</span>
+                            </div>
+                            <a href="#" class="read-link">ĐỌC THÊM <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-design">THIẾT KẾ</span>
+                        <img src="https://images.unsplash.com/photo-1581291518655-9523c932dedf?auto=format&fit=crop&w=600&q=80" alt="Minimal UI" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Ngày 20 tháng 10 năm 2023</span>
+                            <span><i class="fa-regular fa-clock"></i> 5 phút đọc</span>
+                        </div>
+                        <h3>Tâm lý học về giao diện người dùng tối giản</h3>
+                        <p>Cách giảm tải nhận thức giúp tăng tỷ lệ chuyển đổi và cải thiện khả năng giữ chân người dùng trên ứng dụng di động.</p>
+                        <div class="card-footer">
+                            <div class="author">
+                                <div class="avatar">C</div>
+                                <span>Nguyen Van C</span>
+                            </div>
+                            <a href="#" class="read-link">ĐỌC THÊM <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-hardware">PHẦN CỨNG</span>
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80" alt="Quantum Computing" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Ngày 18 tháng 10 năm 2023</span>
+                            <span><i class="fa-regular fa-clock"></i> Thời gian đọc: 15 phút</span>
+                        </div>
+                        <h3>Ưu thế lượng tử: Vượt xa những làn sóng thổi phồng</h3>
+                        <p>Một cái nhìn thực tế về vị thế hiện tại của chúng ta trong lĩnh vực điện toán lượng tử và ý nghĩa của nó đối với công nghệ mã hóa.</p>
+                        <div class="card-footer">
+                            <div class="author">
+                                <div class="avatar">D</div>
+                                <span>Nguyen Van D</span>
+                            </div>
+                            <a href="#" class="read-link">ĐỌC THÊM <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <div class="pagination">
+                <button class="page-btn"><i class="fa fa-chevron-left"></i></button>
+                <button class="page-btn active-page">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn">12</button>
+                <button class="page-btn"><i class="fa fa-chevron-right"></i></button>
+            </div>
+
+        </main>
+
+        <aside class="sidebar">
+            
+            <div class="widget">
+                <h3>Tìm kiếm bài viết</h3>
+                <div class="widget-search">
+                    <input type="text" placeholder="Nhập nội dung tại đây...">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3><i class="fa fa-th-large icon-blue"></i> Thể loại</h3>
+                <ul class="category-list">
+                    <li><span>Trí tuệ nhân tạo</span> <span class="count">24</span></li>
+                    <li><span>Điện toán đám mây</span> <span class="count">18</span></li>
+                    <li><span>An ninh mạng</span> <span class="count">32</span></li>
+                    <li><span>Lập trình Frontend</span> <span class="count">15</span></li>
+                    <li><span>Thiết kế UX/UI</span> <span class="count">11</span></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3><i class="fa fa-fire icon-orange"></i> Đang thịnh hành</h3>
+                <div class="trending-item">
+                    <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?auto=format&fit=crop&w=100&h=100&q=80" alt="GPU" class="trending-thumb">
+                    <div>
+                        <h4>Giải mã kiến trúc GPU mới của NVIDIA</h4>
+                        <span class="sub-badge">PHẦN CỨNG</span>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=100&h=100&q=80" alt="Serverless" class="trending-thumb">
+                    <div>
+                        <h4>Điện toán Serverless: Sự chấm dứt của cơ sở hạ tầng?</h4>
+                        <span class="sub-badge">ĐÁM MÂY</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3><i class="fa fa-tags icon-purple"></i> Các thẻ phổ biến</h3>
+                <div class="tags-cloud">
+                    <span class="tag">#ReactJS</span>
+                    <span class="tag">#AI</span>
+                    <span class="tag">#DevOps</span>
+                    <span class="tag">#Figma</span>
+                    <span class="tag">#Python</span>
+                    <span class="tag">#UI</span>
+                    <span class="tag">#CyberSecurity</span>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo white-text" onclick="location.href='../../TechZone-Website/index.html';">
+                    <span class="logo-box">T</span> TechZone
+                </div>
+                <p>Nền tảng hàng đầu thế giới về các thông tin chuyên sâu về công nghệ, tin tức dành cho lập trình viên và các bài phân tích chi tiết về kiến trúc phần mềm.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Công ty</h4>
+                <a href="../../TechZone-Website/about.html">Về chúng tôi</a>
+                <a href="../../TechZone-Website/index.html#contact">Liên hệ</a>
+                <a href="#">Cơ hội nghề nghiệp</a>
+                <a href="#">Bộ tài liệu báo chí</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Hỗ trợ</h4>
+                <a href="#">Trung tâm Trợ giúp</a>
+                <a href="#">Chính sách quyền riêng tư</a>
+                <a href="#">Chính sách Cookie</a>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Bản tin</h4>
+                <p>Luôn đón đầu xu hướng. Nhận thông tin cập nhật hàng tuần ngay trong hộp thư của bạn.</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Địa chỉ email">
+                    <button type="button">Tham gia ngay</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../shared/data.js"></script>
+    <script src="../../shared/auth.js"></script>
+    <script src="../../shared/cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Hiệu ứng viền nổi bật khi click chọn ảnh sản phẩm */
+.thumb-box {
+    transition: all 0.2s ease;
+    border-color: #f3f4f6;
+}
+.thumb-box:hover {
+    border-color: #3b82f6;
+}
+.thumb-box.active {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+/* Hiệu ứng chuyển động mờ nhạt khi đổi ảnh lớn chính diện */
+.main-img-transition {
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.main-img-fade {
+    opacity: 0.3;
+    transform: scale(0.98);
+}
+
+/* Bo viền của danh sách cấu hình RAM / Ổ cứng */
+.ram-btn, .storage-btn {
+    transition: all 0.15s ease;
+}

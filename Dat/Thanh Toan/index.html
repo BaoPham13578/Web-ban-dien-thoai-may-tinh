@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán | TechZone</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo" onclick="location.href='../../TechZone-Website/index.html';" style="cursor: pointer;">
+            <div class="logo-box">T</div>
+            <span>TechZone</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="../../TechZone-Website/index.html">Trang Chủ</a>
+            <a href="../../TechZone-Website/categories.html">Sản phẩm</a>
+            <a href="../../TechZone-Website/about.html">Giới thiệu</a>
+            <a href="../Trang Khuyen Mai/index.html">Tin tức</a>
+            <a href="../../TechZone-Website/index.html#contact">Liên hệ</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-user" onclick="location.href='../../NguyenNgocHuy_2474802015199/taikhoancanhan/index.html';" style="cursor: pointer;"></i>
+
+            <div class="cart-icon" onclick="location.href='../gio hang/index.html';" style="cursor: pointer;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>2</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <span onclick="location.href='../../TechZone-Website/index.html';" style="cursor: pointer;">Trang chủ</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span onclick="location.href='../gio hang/index.html';" style="cursor: pointer;">Giỏ hàng</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="active">Thanh toán</span>
+    </div>
+
+    <!-- MAIN -->
+    <div class="checkout-container">
+
+        <!-- LEFT -->
+        <div class="checkout-left">
+
+            <h1>Thanh toán</h1>
+
+            <!-- Customer Info -->
+            <div class="card">
+                <h3>
+                    <i class="fa-regular fa-address-card"></i>
+                    Thông tin khách hàng
+                </h3>
+
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label>Họ và tên</label>
+                        <input type="text" placeholder="Nguyễn Ngọc Huy" value="Nguyễn Ngọc Huy">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Số điện thoại</label>
+                        <input type="text" placeholder="0123456789" value="0123456789">
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="huyngocc08072006@gmail.com" value="huyngocc08072006@gmail.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Địa chỉ email phụ</label>
+                        <input type="email" placeholder="example2@gmail.com">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shipping Address -->
+            <div class="card">
+                <h3>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Địa chỉ giao hàng
+                </h3>
+
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label>Quốc gia</label>
+                        <input type="text" value="Việt Nam" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Tỉnh / Thành phố</label>
+                        <input type="text" value="TP Hồ Chí Minh">
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label>Quận / Huyện</label>
+                        <input type="text" placeholder="Bình Thạnh" value="Bình Thạnh">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Mã bưu chính</label>
+                        <input type="text" placeholder="700000" value="700000">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Địa chỉ chi tiết</label>
+                    <input type="text" placeholder="555 Đặng Thùy Trâm" value="555 Đặng Thùy Trâm">
+                </div>
+            </div>
+
+            <!-- Shipping Method -->
+            <div class="card">
+                <h3>
+                    <i class="fa-solid fa-truck"></i>
+                    Phương thức vận chuyển
+                </h3>
+
+                <div class="shipping-wrapper">
+
+                    <div class="shipping-item active">
+                        <div>
+                            <h4>Giao hàng tiêu chuẩn</h4>
+                            <p>3 - 5 ngày làm việc</p>
+                        </div>
+
+                        <strong>Miễn phí</strong>
+                    </div>
+
+                    <div class="shipping-item">
+                        <div>
+                            <h4>Giao hàng hỏa tốc</h4>
+                            <p>1 - 2 ngày làm việc</p>
+                        </div>
+
+                        <strong>50.000đ</strong>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Payment -->
+            <div class="card">
+                <h3>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Phương thức thanh toán
+                </h3>
+
+                <div class="payment-methods">
+
+                    <div class="payment-item active">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Thẻ tín dụng</span>
+                    </div>
+
+                    <div class="payment-item">
+                        <i class="fa-brands fa-paypal"></i>
+                        <span>Paypal</span>
+                    </div>
+
+                    <div class="payment-item">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Chuyển khoản</span>
+                    </div>
+
+                    <div class="payment-item">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>Ví điện tử</span>
+                    </div>
+
+                    <div class="payment-item">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <span>Thanh toán khi nhận hàng</span>
+                    </div>
+
+                </div>
+
+                <div class="card-form">
+
+                    <div class="input-group">
+                        <label>Số thẻ</label>
+                        <input type="text" placeholder="**** **** **** 4242">
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Ngày hết hạn</label>
+                            <input type="text" placeholder="12/26">
+                        </div>
+
+                        <div class="input-group">
+                            <label>CVV</label>
+                            <input type="password" placeholder="***">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="checkout-right">
+
+            <div class="summary-card">
+
+                <h3>Tóm tắt đơn hàng</h3>
+
+                <div class="product-item" onclick="location.href='../../NguyenNgocHuy_2474802015199/chitietsanpham/index.html';" style="cursor: pointer;">
+
+                    <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&auto=format&fit=crop"
+     alt="iPhone 15 Pro Max">
+
+                    <div class="product-info">
+                        <h4>iPhone 15 Pro Max</h4>
+                        <small>256GB • Titanium Tự Nhiên</small>
+                    </div>
+
+                    <div class="product-price">
+                        30.000.000đ
+                    </div>
+                </div>
+
+                <div class="product-item" onclick="location.href='../../NguyenNgocHuy_2474802015199/chitietsanpham/index.html';" style="cursor: pointer;">
+
+                   <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=300&auto=format&fit=crop"
+     alt="Sony WH-1000XM5">
+
+                    <div class="product-info">
+                        <h4>Sony WH-1000XM5</h4>
+                        <small>Màu đen • Chính hãng</small>
+                    </div>
+
+                    <div class="product-price">
+                        8.000.000đ
+                    </div>
+                </div>
+
+                <div class="coupon-box">
+                    <input type="text" placeholder="Mã khuyến mãi (Mẹo: WELCOME)">
+                    <button>Áp dụng</button>
+                </div>
+
+                <div class="summary-detail">
+                    <div>
+                        <span>Tạm tính</span>
+                        <span>38.000.000đ</span>
+                    </div>
+
+                    <div>
+                        <span>Phí vận chuyển</span>
+                        <span>Miễn phí</span>
+                    </div>
+
+                    <div>
+                        <span>Giảm giá</span>
+                        <span class="discount">-300.000đ</span>
+                    </div>
+
+                    <div>
+                        <span>Thuế VAT (10%)</span>
+                        <span>3.800.000đ</span>
+                    </div>
+                </div>
+
+                <div class="total-price">
+                    <span>Tổng cộng</span>
+                    <h2>41.500.000đ</h2>
+                </div>
+
+                <button class="checkout-btn">
+                    Đặt hàng
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="security-info">
+                    <p><i class="fa-solid fa-shield-halved"></i> Thanh toán bảo mật SSL 256-bit</p>
+                    <p><i class="fa-solid fa-clock"></i> Hỗ trợ khách hàng 24/7</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-col">
+            <div class="logo footer-logo" onclick="location.href='../../TechZone-Website/index.html';" style="cursor: pointer;">
+                <div class="logo-box">T</div>
+                <span>TechZone</span>
+            </div>
+
+            <p>Điểm đến công nghệ uy tín dành cho mọi người.</p>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Công ty</h4>
+            <a href="../../TechZone-Website/about.html">Về chúng tôi</a>
+            <a href="#">Tuyển dụng</a>
+            <a href="../../TechZone-Website/index.html#contact">Liên hệ</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hỗ trợ khách hàng</h4>
+            <a href="../../NguyenNgocHuy_2474802015199/taikhoancanhan/index.html">Theo dõi đơn hàng</a>
+            <a href="#">Chính sách đổi trả</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Bản tin</h4>
+            <p>Đăng ký để nhận ưu đãi mới nhất từ TechZone.</p>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Email của bạn">
+                <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../../shared/data.js"></script>
+    <script src="../../shared/auth.js"></script>
+    <script src="../../shared/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

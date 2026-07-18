@@ -1,0 +1,47 @@
+/* Import font chữ hệ thống cao cấp từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Kiểu dáng riêng cho các nút định vị (Sidebar Navigation) */
+.sidebar-nav .nav-item {
+    color: #6b7280; /* Màu xám nhạt mặc định */
+}
+
+.sidebar-nav .nav-item:hover:not(.active) {
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+.sidebar-nav .nav-item.active {
+    background-color: #2563eb; /* Màu xanh Royal chủ đạo */
+    color: #ffffff;
+}
+
+/* Hiệu ứng chuyển động nhẹ (Animation) */
+@keyframes pulse-soft {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.animate-pulse-subtle {
+    animation: pulse-soft 3s infinite ease-in-out;
+}
+
+/* Hiệu ứng hover tương tác cho thẻ danh mục và đơn hàng */
+.order-card, .stat-card {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+}
+
+.icon-badge:hover i {
+    color: #2563eb;
+    transform: rotate(15deg);
+    transition: all 0.2s;
+}
