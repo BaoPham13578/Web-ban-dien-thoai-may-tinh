@@ -1,29 +1,366 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Menu Dự Án Web Bán Điện Thoại</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 40px; background-color: #f4f7f6; }
-        h1 { color: #333; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 15px 0; }
-        a { text-decoration: none; color: #007bff; font-size: 18px; font-weight: bold; }
-        a:hover { color: #0056b3; text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone - Trang Chủ | Cửa Hàng Công Nghệ Số 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- SỬA ĐƯỜNG DẪN CSS TRỎ VÀO THƯ MỤC TECHZONE -->
+  <link rel="stylesheet" href="TechZone-Website/css/style.css">
+  <style>
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 992px) {
+      .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 576px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .product-badge-discount {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: var(--danger);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+  </style>
 </head>
 <body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">⚡ TechZone</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Trang Chủ</a></li>
+        <!-- SỬA ĐƯỜNG DẪN ĐỂ TRỎ ĐÚNG THƯ MỤC -->
+        <li><a href="TechZone-Website/categories.html">Sản phẩm</a></li>
+        <li><a href="TechZone-Website/about.html">Giới Thiệu</a></li>
+        <li><a href="Dat/Trang Khuyen Mai/index.html">Tin Tức</a></li>
+        <li><a href="#contact">Liên Hệ</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Ô tìm kiếm -->
+        <div class="nav-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Tìm Sản Phẩm...">
+        </div>
+        <!-- Icon tài khoản -->
+        <a href="NguyenNgocHuy_2474802015199/dangnhap/index.html" class="nav-icon-btn" title="Tài khoản">
+          <i class="fa-regular fa-user"></i>
+        </a>
+        <!-- Icon yêu thích -->
+        <a href="#" class="nav-icon-btn" title="Yêu thích">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge">2</span>
+        </a>
+        <!-- Icon giỏ hàng -->
+        <a href="Dat/gio hang/index.html" class="nav-icon-btn" title="Giỏ hàng">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
 
-    <h1>Danh sách các trang thành phần</h1>
-    <p>Bấm vào các liên kết dưới đây để xem giao diện:</p>
-    
-    <ul>
-        <!-- Thay đổi đường dẫn tương ứng với tên thư mục chính xác của bạn -->
-        <li><a href="./TechZone-Website/about.html">1. Trang chủ chính (TechZone)</a></li>
-        <li><a href="./Dat/gio hang/index.html">2. Giỏ hàng (Đạt)</a></li>
-        <li><a href="./Dat/Thanh Toan/index.html">3. Thanh toán (Đạt)</a></li>
-        <li><a href="./NguyenNgocHuy_Danhsach/chitietsanpham/index.html">4. Chi tiết sản phẩm (Huy)</a></li>
-    </ul>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span style="background: #EFF6FF; color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 6px 14px; border-radius: 20px; display: inline-block; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Siêu Phẩm 2026</span>
+          <h1>Hiệu Năng Thế Hệ Mới.<br>Thiết Kế Không Lưu Mờ.</h1>
+          <p>Khám phá bộ sưu tập laptop và điện thoại cao cấp mới nhất, được thiết kế tối ưu cho mọi công việc chuyên nghiệp và sáng tạo.</p>
+          <div class="hero-buttons">
+            <button class="btn-hero primary btn-primary" onclick="location.href='TechZone-Website/categories.html';">Mua Ngay</button>
+            <button class="btn-hero secondary btn-secondary" onclick="location.href='TechZone-Website/categories.html';">Khám Phá Sản Phẩm</button>
+          </div>
+        </div>
+        <div class="hero-image" style="background: transparent; border-radius: 0; box-shadow: none;">
+          <!-- SỬA ĐƯỜNG DẪN ẢNH HERO -->
+          <img src="TechZone-Website/images/laptop_phone.jpg" alt="Laptop and Phone Mockup" style="max-height: 380px; object-fit: contain; width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Danh Mục Sản Phẩm</h2>
+      <p class="section-subtitle">Tìm kiếm sản phẩm mong muốn của bạn</p>
+      
+      <div class="features-grid">
+        <div class="feature-card" onclick="location.href='TechZone-Website/categories.html';" style="cursor: pointer; text-align: center; padding: 2rem 1rem;">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">💻</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Laptops</h3>
+        </div>
+
+        <div class="feature-card" onclick="location.href='TechZone-Website/categories.html';" style="cursor: pointer; text-align: center; padding: 2rem 1rem;">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Điện Thoại</h3>
+        </div>
+
+        <div class="feature-card" onclick="location.href='TechZone-Website/categories.html';" style="cursor: pointer; text-align: center; padding: 2rem 1rem;">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">🖥️</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Desktops</h3>
+        </div>
+
+        <div class="feature-card" onclick="location.href='TechZone-Website/categories.html';" style="cursor: pointer; text-align: center; padding: 2rem 1rem;">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">📁</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Tablets</h3>
+        </div>
+
+        <div class="feature-card" onclick="location.href='TechZone-Website/categories.html';" style="cursor: pointer; text-align: center; padding: 2rem 1rem;">
+          <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">🔌</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Phụ Kiện</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section light-bg">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h2 class="section-title" style="margin-bottom: 0;">Sản Phẩm Nổi Bật</h2>
+        <a href="TechZone-Website/categories.html" style="color: var(--primary); font-weight: 600; text-decoration: none; font-size: 0.95rem;">Xem tất cả <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="products">
+        <!-- Sản phẩm 1 -->
+        <div class="product-card">
+          <div class="product-badge-discount">-15%</div>
+          <div class="product-image" style="background: #F9FAFB; height: 220px; display: flex; align-items: center; justify-content: center; padding: 1.5rem;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300" alt="UltraBook Pro 14">
+          </div>
+          <div class="product-info" style="padding: 1.2rem;">
+            <div class="product-category" style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 700; margin-bottom: 0.25rem;">Laptop</div>
+            <h3 class="product-name" style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); cursor: pointer;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">UltraBook Pro 14" M2 Chip 16GB RAM</h3>
+            <div class="product-rating" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); margin-left: 0.25rem;">(128)</span>
+            </div>
+            <div class="product-price" style="display: flex; align-items: baseline; gap: 0.5rem;">
+              <span class="product-price-old">22.000.000₫</span>
+              20.000.000₫
+            </div>
+            <button class="btn-add" style="width: 100%; margin-top: 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: white; padding: 0.6rem; cursor: pointer; font-weight: 600; transition: all 0.3s;" onclick="location.href='Dat/gio hang/index.html';">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="product-card">
+          <div class="product-image" style="background: #F9FAFB; height: 220px; display: flex; align-items: center; justify-content: center; padding: 1.5rem;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">
+            <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300" alt="X-Phone 15 Pro Max">
+          </div>
+          <div class="product-info" style="padding: 1.2rem;">
+            <div class="product-category" style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 700; margin-bottom: 0.25rem;">Điện thoại</div>
+            <h3 class="product-name" style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); cursor: pointer;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">X-Phone 15 Pro Max 256GB</h3>
+            <div class="product-rating" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); margin-left: 0.25rem;">(245)</span>
+            </div>
+            <div class="product-price">
+              10.000.000₫
+            </div>
+            <button class="btn-add" style="width: 100%; margin-top: 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: white; padding: 0.6rem; cursor: pointer; font-weight: 600; transition: all 0.3s;" onclick="location.href='Dat/gio hang/index.html';">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="product-card">
+          <div class="product-badge-discount">-20%</div>
+          <div class="product-image" style="background: #F9FAFB; height: 220px; display: flex; align-items: center; justify-content: center; padding: 1.5rem;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Aura Studio">
+          </div>
+          <div class="product-info" style="padding: 1.2rem;">
+            <div class="product-category" style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 700; margin-bottom: 0.25rem;">Tai nghe</div>
+            <h3 class="product-name" style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); cursor: pointer;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">Aura Studio Headphones</h3>
+            <div class="product-rating" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); margin-left: 0.25rem;">(89)</span>
+            </div>
+            <div class="product-price" style="display: flex; align-items: baseline; gap: 0.5rem;">
+              <span class="product-price-old">3.000.000₫</span>
+              2.000.000₫
+            </div>
+            <button class="btn-add" style="width: 100%; margin-top: 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: white; padding: 0.6rem; cursor: pointer; font-weight: 600; transition: all 0.3s;" onclick="location.href='Dat/gio hang/index.html';">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 4 -->
+        <div class="product-card">
+          <div class="product-image" style="background: #F9FAFB; height: 220px; display: flex; align-items: center; justify-content: center; padding: 1.5rem;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">
+            <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=300" alt="Chronos Watch">
+          </div>
+          <div class="product-info" style="padding: 1.2rem;">
+            <div class="product-category" style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 700; margin-bottom: 0.25rem;">Smartwatch</div>
+            <h3 class="product-name" style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); cursor: pointer;" onclick="location.href='NguyenNgocHuy_2474802015199/chitietsanpham/index.html';">Chronos Watch Series 8 GPS</h3>
+            <div class="product-rating" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); margin-left: 0.25rem;">(412)</span>
+            </div>
+            <div class="product-price">
+              4.000.000₫
+            </div>
+            <button class="btn-add" style="width: 100%; margin-top: 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: white; padding: 0.6rem; cursor: pointer; font-weight: 600; transition: all 0.3s;" onclick="location.href='Dat/gio hang/index.html';">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTICS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Thành Tựu Của Chúng Tôi</h2>
+      <p class="section-subtitle">Những con số nói lên sự tin cậy của khách hàng dành cho TechZone</p>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Nhãn hiệu hàng đầu</p>
+        </div>
+        <div class="stat-item">
+          <h3>2.5M</h3>
+          <p>Khách hàng hài lòng</p>
+        </div>
+        <div class="stat-item">
+          <h3>150+</h3>
+          <p>Sản phẩm mới hàng tháng</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Chi nhánh toàn quốc</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section light-bg">
+    <div class="container">
+      <h2 class="section-title">Tại Sao Chọn TechZone</h2>
+      <p class="section-subtitle">Những lý do khiến TechZone là lựa chọn tốt nhất cho bạn</p>
+      
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Giao Hàng Nhanh</h3>
+          <p>Vận chuyển miễn phí cho đơn hàng trên 500K. Giao hàng trong 24-48 giờ tại TP HCM và Hà Nội.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Thanh Toán Linh Hoạt</h3>
+          <p>Nhiều phương thức thanh toán: thẻ tín dụng, ví điện tử, trả góp 0% lãi suất.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Bảo Hành Toàn Diện</h3>
+          <p>Bảo hành chính hãng tới 24 tháng. Hỗ trợ bảo hành nhanh chóng và hiệu quả.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Hỗ Trợ 24/7</h3>
+          <p>Đội ngũ chuyên viên sẵn sàng giúp đỡ bạn mọi lúc qua điện thoại, email, live chat.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3>Chất Lượng Đảm Bảo</h3>
+          <p>Tất cả sản phẩm đều là hàng chính hãng 100%. Cam kết hoàn tiền nếu phát hiện hàng giả.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Ứng Dụng Di Động</h3>
+          <p>Tải ứng dụng TechZone để nhận thông tin khuyến mãi độc quyền và theo dõi đơn hàng dễ dàng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section">
+    <div class="container" style="text-align: center; max-width: 600px; margin: 0 auto;">
+      <h2 class="section-title">Đăng Ký Nhận Tin</h2>
+      <p class="section-subtitle">Nhận thông tin sản phẩm mới, khuyến mãi độc quyền và mẹo công nghệ trực tiếp vào email của bạn</p>
+      
+      <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+        <input type="email" placeholder="Nhập email của bạn" style="flex: 1; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; font-family: inherit;">
+        <button class="btn-primary" style="border: none; padding: 0 2rem; border-radius: 8px; cursor: pointer;">Đăng Ký</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" style="background: #1F2937; color: #F3F4F6;">
+    <div class="footer-content" style="max-width: 1400px; margin: 0 auto; padding: 3rem 2rem; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 2rem;">
+      <div class="footer-section">
+        <h4 style="color: white; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">⚡ TechZone</h4>
+        <p style="color: #9CA3AF; line-height: 1.8; margin-bottom: 1rem; font-size: 0.9rem;">Sản phẩm công nghệ cao cấp dành cho chuyên gia và người đam mê. Chất lượng được đảm bảo.</p>
+        <div class="social-links" style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <a href="#" style="color: #9CA3AF; font-size: 1.2rem;"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" style="color: #9CA3AF; font-size: 1.2rem;"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" style="color: #9CA3AF; font-size: 1.2rem;"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4 style="color: white; font-weight: 600; margin-bottom: 1rem; font-size: 0.95rem;">Tài nguyên</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Tài liệu</a></li>
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Tham chiếu API</a></li>
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Trung tâm hỗ trợ</a></li>
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Trạng thái hệ thống</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 style="color: white; font-weight: 600; margin-bottom: 1rem; font-size: 0.95rem;">Công ty</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+          <li><a href="TechZone-Website/about.html" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Về chúng tôi</a></li>
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Cơ hội nghề nghiệp</a></li>
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Pháp lý & Quyền riêng tư</a></li>
+          <li><a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.9rem;">Bộ tài liệu báo chí</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 style="color: white; font-weight: 600; margin-bottom: 1rem; font-size: 0.95rem;">Liên Lạc</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2; color: #9CA3AF; font-size: 0.9rem;">
+          <li>📞 Hotline: 1800 1234</li>
+          <li>📧 Email: support@techzone.vn</li>
+          <li>📍 Địa chỉ: Đặng Thùy Trâm, Bình Thạnh, TP. Hồ Chí Minh</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom" style="text-align: center; padding: 1.5rem 0; border-top: 1px solid #374151; color: #9CA3AF; font-size: 0.8rem;">
+      <p>&copy; 2026 TechZone. Bản quyền được bảo lưu. | Thiết kế bởi TechZone Design Team</p>
+    </div>
+  </footer>
+
+  <!-- SỬA ĐƯỜNG DẪN CÁC FILE SCRIPT -->
+  <script src="shared/data.js"></script>
+  <script src="shared/auth.js"></script>
+  <script src="shared/cart.js"></script>
+  <script src="TechZone-Website/js/main.js"></script>
 </body>
 </html>
